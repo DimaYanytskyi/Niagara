@@ -156,7 +156,7 @@ struct SettingsView: View {
                     }
                     
                     Button(action: {
-                        navigationViewModel.navigate(to: "https://sites.google.com/view/onlywin-time-is-on-your-side-p/")
+                        navigationViewModel.navigate(to: "https://sites.google.com/view/niagara-find-your-rest/privacy-policy")
                     }) {
                         HStack(alignment: .center, spacing: 8) {
                             Text("Privacy Policy")
