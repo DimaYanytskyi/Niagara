@@ -1,0 +1,55 @@
+workflows:
+  ios-native-workflow:
+    name: iOS Native
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    integrations: 
+      app_store_connect: Niagara - Find Your Rest
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.nia.gara.jorney
+      vars:
+        BUNDLE_ID: "com.nia.gara.jorney"
+        XCODE_WORKSPACE: "Niagara Journey.xcodeproj/project.xcworkspace"
+        XCODE_SCHEME: "Niagara Journey"
+        APP_STORE_APPLE_ID: 6745518395
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: List files to verify path
+        script: ls -R /Users/builder/clone/
+      - name: Install CocoaPods dependencies
+        script: |
+          pod install || echo "No Podfile found, skipping pod install."
+      - name: Set up provisioning profiles settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Obfuscate Swift code
+        script: |
+          find . -name "*.swift" -print0 | xargs -0 sed -i '' -e 's/\b(\w+)\b/$1_obf/g'
+      - name: Build ipa for distribution
+        script: |
+          xcode-project build-ipa \
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      email:
+        recipients:
+          - yanytskyidima@gmail.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        beta_groups:
+          - QA
+        submit_to_app_store: true
+        cancel_previous_submissions: true
+        release_type: MANUAL
+
