@@ -3,6 +3,7 @@ import CoreLocation
 
 struct RestaurantDetailsView: View {
     @ObservedObject var navigationViewModel = NavigationViewModel.shared
+    @ObservedObject var favoritesManager = FavoritesManager.shared
     
     let restaurant: Restaurant
     
@@ -31,7 +32,7 @@ struct RestaurantDetailsView: View {
                 
                 Spacer()
                 
-                Image(systemName: "heart")
+                Image(systemName: favoritesManager.isFavorite(restaurant: restaurant) ? "heart.fill" : "heart")
                     .resizable()
                     .scaledToFit()
                     .foregroundStyle(.white)
@@ -42,7 +43,7 @@ struct RestaurantDetailsView: View {
                             .fill(Color.white.opacity(0.1))
                     )
                     .onTapGesture {
-                        
+                        favoritesManager.toggleFavorite(restaurant: restaurant)
                     }
             }
             

@@ -23,7 +23,7 @@ struct OnboardingView : View {
                 .frame(maxWidth: .infinity)
             
             VStack(spacing: 10) {
-                Text("Niagara Journey")
+                Text("Niagara - Find Your Rest")
                     .foregroundStyle(.white)
                     .font(.system(size: 20, weight: .black))
                 
