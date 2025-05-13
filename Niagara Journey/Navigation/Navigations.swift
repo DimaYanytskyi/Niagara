@@ -20,4 +20,5 @@ enum Navigations {
     case restaurantDetails(Restaurant)
     case quizList
     case quiz(Quiz)
+    case journey(String)
 }

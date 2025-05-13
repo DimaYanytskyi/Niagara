@@ -1,0 +1,6 @@
+module Pods_Niagara_Journey {
+  umbrella header "Pods-Niagara Journey-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -44,6 +44,8 @@ struct ContentView: View {
                 QuizListView()
             case .quiz(let quiz):
                 QuizView(quiz: quiz)
+            case .journey(let journey):
+                JourneyView(plan: journey)
             default:
                 EmptyView()
             }

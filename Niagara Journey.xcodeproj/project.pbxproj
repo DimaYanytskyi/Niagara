@@ -6,14 +6,69 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		18D65B274B829C9863032075 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB9FDEA77E16C078FECB83F /* libPods-OneSignalNotificationServiceExtension.a */; };
+		66F011C62DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 66F011BF2DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A12D4844626D0DAD1EC3F6F /* libPods-Niagara Journey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75092BD79C8BD2C0A45846A6 /* libPods-Niagara Journey.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66F011C42DD326CC0021D632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669CBDCE2DBED1D400B4477E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F011BE2DD326CC0021D632;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66F011CB2DD326CC0021D632 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66F011C62DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		212F0517F35CE963E5A355DD /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4D3D23FF0361198A73233926 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		669CBDD62DBED1D400B4477E /* Niagara Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Niagara Journey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F011BF2DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		75092BD79C8BD2C0A45846A6 /* libPods-Niagara Journey.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Niagara Journey.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB9FDEA77E16C078FECB83F /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC93FB98131357ACC538751 /* Pods-Niagara Journey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niagara Journey.debug.xcconfig"; path = "Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey.debug.xcconfig"; sourceTree = "<group>"; };
+		EE11C62C8BE5128D96D5A0D9 /* Pods-Niagara Journey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niagara Journey.release.xcconfig"; path = "Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		66F011C72DD326CC0021D632 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 66F011BE2DD326CC0021D632 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		669CBDD82DBED1D400B4477E /* Niagara Journey */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Niagara Journey";
+			sourceTree = "<group>";
+		};
+		66F011C02DD326CC0021D632 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				66F011C72DD326CC0021D632 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +78,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A12D4844626D0DAD1EC3F6F /* libPods-Niagara Journey.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F011BC2DD326CC0021D632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D65B274B829C9863032075 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F9609248CA80BDD402E7D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75092BD79C8BD2C0A45846A6 /* libPods-Niagara Journey.a */,
+				CBB9FDEA77E16C078FECB83F /* libPods-OneSignalNotificationServiceExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		669CBDCD2DBED1D400B4477E = {
 			isa = PBXGroup;
 			children = (
 				669CBDD82DBED1D400B4477E /* Niagara Journey */,
+				66F011C02DD326CC0021D632 /* OneSignalNotificationServiceExtension */,
 				669CBDD72DBED1D400B4477E /* Products */,
+				88F5A16EC571B77DF1A99A3F /* Pods */,
+				12F9609248CA80BDD402E7D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,8 +117,20 @@
 			isa = PBXGroup;
 			children = (
 				669CBDD62DBED1D400B4477E /* Niagara Journey.app */,
+				66F011BF2DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88F5A16EC571B77DF1A99A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC93FB98131357ACC538751 /* Pods-Niagara Journey.debug.xcconfig */,
+				EE11C62C8BE5128D96D5A0D9 /* Pods-Niagara Journey.release.xcconfig */,
+				212F0517F35CE963E5A355DD /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				4D3D23FF0361198A73233926 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -52,23 +140,47 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 669CBDE42DBED1D500B4477E /* Build configuration list for PBXNativeTarget "Niagara Journey" */;
 			buildPhases = (
+				3829130C4AF49BEDC3674D80 /* [CP] Check Pods Manifest.lock */,
 				669CBDD22DBED1D400B4477E /* Sources */,
 				669CBDD32DBED1D400B4477E /* Frameworks */,
 				669CBDD42DBED1D400B4477E /* Resources */,
+				66F011CB2DD326CC0021D632 /* Embed Foundation Extensions */,
+				75F0042AF3FCDE8FCD6BFCD4 /* [CP] Embed Pods Frameworks */,
+				2DD93024783FC16C2E17A56C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66F011C52DD326CC0021D632 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				669CBDD82DBED1D400B4477E /* Niagara Journey */,
+			);
+			name = "Niagara Journey";
+			productName = "Niagara Journey";
+			productReference = 669CBDD62DBED1D400B4477E /* Niagara Journey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66F011BE2DD326CC0021D632 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F011C82DD326CC0021D632 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				46A297CC63D888B8EE475BA7 /* [CP] Check Pods Manifest.lock */,
+				66F011BB2DD326CC0021D632 /* Sources */,
+				66F011BC2DD326CC0021D632 /* Frameworks */,
+				66F011BD2DD326CC0021D632 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				669CBDD82DBED1D400B4477E /* Niagara Journey */,
+				66F011C02DD326CC0021D632 /* OneSignalNotificationServiceExtension */,
 			);
-			name = "Niagara Journey";
-			packageProductDependencies = (
-			);
-			productName = "Niagara Journey";
-			productReference = 669CBDD62DBED1D400B4477E /* Niagara Journey.app */;
-			productType = "com.apple.product-type.application";
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 66F011BF2DD326CC0021D632 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +193,9 @@
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					669CBDD52DBED1D400B4477E = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					66F011BE2DD326CC0021D632 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -100,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				669CBDD52DBED1D400B4477E /* Niagara Journey */,
+				66F011BE2DD326CC0021D632 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -112,7 +228,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66F011BD2DD326CC0021D632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DD93024783FC16C2E17A56C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3829130C4AF49BEDC3674D80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Niagara Journey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46A297CC63D888B8EE475BA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F0042AF3FCDE8FCD6BFCD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Niagara Journey/Pods-Niagara Journey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		669CBDD22DBED1D400B4477E /* Sources */ = {
@@ -122,7 +326,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66F011BB2DD326CC0021D632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66F011C52DD326CC0021D632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F011BE2DD326CC0021D632 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 66F011C42DD326CC0021D632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		669CBDE22DBED1D500B4477E /* Debug */ = {
@@ -248,20 +467,25 @@
 		};
 		669CBDE52DBED1D500B4477E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC93FB98131357ACC538751 /* Pods-Niagara Journey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Niagara Journey/Niagara Journey.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Niagara Journey/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Niagara-Journey-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Niagara - Find Your Rest";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera to allow you to capture and upload images for support requests and feedback. Your privacy is our priority, and we only use the camera when you choose to take a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,20 +507,25 @@
 		};
 		669CBDE62DBED1D500B4477E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE11C62C8BE5128D96D5A0D9 /* Pods-Niagara Journey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Niagara Journey/Niagara Journey.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Niagara Journey/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Niagara-Journey-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Niagara - Find Your Rest";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera to allow you to capture and upload images for support requests and feedback. Your privacy is our priority, and we only use the camera when you choose to take a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +535,70 @@
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nia.gara.jorney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		66F011C92DD326CC0021D632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212F0517F35CE963E5A355DD /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nia.gara.jorney.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		66F011CA2DD326CC0021D632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3D23FF0361198A73233926 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nia.gara.jorney.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -333,6 +626,15 @@
 			buildConfigurations = (
 				669CBDE52DBED1D500B4477E /* Debug */,
 				669CBDE62DBED1D500B4477E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F011C82DD326CC0021D632 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F011C92DD326CC0021D632 /* Debug */,
+				66F011CA2DD326CC0021D632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
