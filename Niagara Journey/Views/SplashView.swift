@@ -17,19 +17,19 @@ struct SplashView : View {
         VStack(spacing: 20) {
             Spacer()
             
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-            
             Text("Loading...")
                 .foregroundStyle(.white)
                 .font(.system(size: 20, weight: .heavy))
-            
-            Spacer()
+                .padding()
         }
-        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Image("splash 3")
+                .resizable()
+                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .ignoresSafeArea(.all)
+        )
         .onAppear {
             if !second {
                 DispatchQueue.main.async {
@@ -84,5 +84,9 @@ struct SplashView : View {
             }
         }
     }
+}
+
+#Preview {
+    SplashView()
 }
 
